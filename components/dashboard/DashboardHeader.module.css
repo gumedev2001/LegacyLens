@@ -1,0 +1,120 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative; /* ← AGREGAR ESTO */
+  z-index: 100; /* ← MENOR QUE EL SIDEBAR */
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #4b5563;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menuButton:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.greeting h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.greeting p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: #f8fafc;
+  border-radius: 50px;
+  border: 1px solid #e5e7eb;
+}
+
+.userInitial {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.9rem;
+}
+
+.userStatus {
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .header {
+    padding: 1rem;
+  }
+  
+  .menuButton {
+    display: block;
+  }
+  
+  .greeting h1 {
+    font-size: 1.25rem;
+  }
+  
+  .userBadge .userInfo {
+    display: none;
+  }
+  
+  .userBadge {
+    padding: 0.5rem;
+  }
+}

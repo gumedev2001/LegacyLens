@@ -1,0 +1,58 @@
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: #374151;
+}
+
+.infoValue {
+  color: #6b7280;
+}
+
+.construction {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fffbeb;
+  border: 2px dashed #f59e0b;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.construction h4 {
+  color: #d97706;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
